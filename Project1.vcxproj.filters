@@ -29,5 +29,8 @@
     <ClInclude Include="Find.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Show.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

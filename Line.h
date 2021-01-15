@@ -41,10 +41,10 @@ public:
 	//停一辆车
 	virtual void add(Car car);
 	//开走一辆车
-	void pop(std::string car);
+	void pop(const std::string& car);
 	void pop(int index);
 
-	size_t getsize() 
+	size_t getsize()const
 	{ 
 		return container.size(); 
 	}
@@ -93,7 +93,7 @@ void Line::add(Car car)
 	
 }
 
-void Line::pop(std::string car)
+void Line::pop(const std::string& car)
 {
 	if (container.empty())
 	{

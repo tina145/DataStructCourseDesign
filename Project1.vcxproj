@@ -25,6 +25,7 @@
     <ClInclude Include="Find.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="NLine.h" />
+    <ClInclude Include="Show.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

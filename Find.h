@@ -14,13 +14,13 @@ public:
 	void add(Car car);
 
 	//顺序O(n)
-	void order(std::string s)const;
+	void order(const std::string& s)const;
 
 	//二分O(logn)
-	void binary(std::string s)const;
+	void binary(const std::string& s)const;
 
 	//哈希O(1)
-	void hashfind(std::string s)const;
+	void hashfind(const std::string& s)const;
 
 	//二分前排序
 	void sor()
@@ -40,14 +40,14 @@ void Find::add(Car car)
 	hash[car.getid()] = car;
 }
 
-void Find::order(std::string s)const
+void Find::order(const std::string& s)const
 {
 	for (const auto& i : container)
 		if (i.getid() == s)
 			return;
 }
 
-void Find::binary(std::string s)const
+void Find::binary(const std::string& s)const
 {
 	int left = 0, right = container.size() - 1;
 	while (left + 1 < right)
@@ -62,7 +62,7 @@ void Find::binary(std::string s)const
 	}
 }
 
-void Find::hashfind(std::string s)const
+void Find::hashfind(const std::string& s)const
 {
 	if (hash.count(s))
 		return;
